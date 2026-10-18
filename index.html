@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishv Book Publication</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #123b70;
+    color: white;
+    padding: 22px 12px;
+    text-align: center;
+}
+
+header h1 { font-size: 23px; }
+
+.container {
+    width: 92%;
+    max-width: 620px;
+    margin: 20px auto;
+}
+
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 3px 12px #0000000c;
+}
+
+.summary {
+    background: #123b70;
+    color: white;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.summary h2 {
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.label { color: #64748b; }
+
+.value {
+    font-weight: bold;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.status {
+    color: #855900;
+    background: #fff3cd;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.notice {
+    background: #eff6ff;
+    padding: 12px;
+    border-left: 4px solid #2563eb;
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.qr-placeholder {
+    border: 2px dashed #94a3b8;
+    padding: 28px 12px;
+    text-align: center;
+    border-radius: 8px;
+    line-height: 1.7;
+}
+
+button {
+    background: #15803d;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    padding: 14px;
+    width: 100%;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>VISHV BOOK PUBLICATION</h1>
+    <p>Customer Information Dashboard</p>
+</header>
+
+<main class="container">
+
+    <section class="summary">
+        <p>दर्ज की गई कुल राशि</p>
+        <h2>₹28,200</h2>
+        <span class="status">राशि सत्यापन के अधीन</span>
+    </section>
+
+    <section class="card">
+        <h2>Customer Information</h2>
+
+        <div class="row">
+            <span class="label">Name</span>
+            <span class="value">Harshita Singh</span>
+        </div>
+
+        <div class="row">
+            <span class="label">Mobile</span>
+            <span class="value">8527787128</span>
+        </div>
+
+        <div class="row">
+            <span class="label">House Number</span>
+            <span class="value">333</span>
+        </div>
+
+        <div class="row">
+            <span class="label">Area</span>
+            <span class="value">Anand Parbat, Than Singh Nagar</span>
+        </div>
+
+        <div class="row">
+            <span class="label">City</span>
+            <span class="value">New Delhi</span>
+        </div>
+
+        <div class="row">
+            <span class="label">District</span>
+            <span class="value">Central Delhi</span>
+        </div>
+
+        <div class="row">
+            <span class="label">PIN Code</span>
+            <span class="value">110005</span>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Charge Details</h2>
+
+        <div class="row">
+            <span class="label">Delivery Charge</span>
+            <span class="value">
+                ₹1,999<br><br>
+                <span class="status">दर्ज: Pending</span>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="label">Salary Amount</span>
+            <span class="value">₹14,499</span>
+        </div>
+
+        <div class="row">
+            <span class="label">GST Charge</span>
+            <span class="value">
+                ₹4,999<br><br>
+                <span class="status">दर्ज: Pending</span>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="label">Salary Subtotal</span>
+            <span class="value">₹19,498</span>
+        </div>
+
+        <div class="row">
+            <span class="label">Withdrawal Charges</span>
+            <span class="value">₹8,769</span>
+        </div>
+
+        <div class="row">
+            <span class="label">दर्ज कुल राशि</span>
+            <span class="value">₹28,200</span>
+        </div>
+
+        <div class="notice">
+            ये दर्ज की गई राशियाँ हैं, सत्यापित भुगतान रिकॉर्ड नहीं।
+            वास्तविक चार्ज और बकाया राशि की पुष्टि करें।
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Company Payment QR</h2>
+
+        <div class="qr-placeholder">
+            <strong>कंपनी का सत्यापित QR यहाँ जोड़ें</strong>
+            <p>
+                भुगतान से पहले प्राप्तकर्ता का नाम और UPI ID
+                कंपनी के अधिकृत खाते से मिलाएँ।
+            </p>
+        </div>
+
+        <div class="notice" style="margin-top:12px">
+            रिफंड की पात्रता और समय वास्तविक लेन-देन
+            तथा कंपनी की सत्यापित प्रक्रिया पर निर्भर करते हैं।
+            दो मिनट में रिफंड की गारंटी नहीं दी जा सकती।
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Contact</h2>
+        <p>Mobile: 8527787128</p>
+
+        <a href="https://wa.me/918527787128"
+           style="text-decoration:none">
+            <button type="button">
+                WhatsApp पर संपर्क करें
+            </button>
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    VISHV BOOK PUBLICATION<br>
+    Customer Information Dashboard
+</footer>
+
+</body>
+</html>
